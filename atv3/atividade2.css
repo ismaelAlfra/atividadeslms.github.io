@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    color: rgb(88, 224, 172);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section h2{
+    color: rgb(255, 145, 0);
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article{
+    border-style: solid;
+    border-width: 5px;
+    border-color:  rgb(255, 145, 0);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+svg{
+    background-color: white;
+    margin-left: 35%;
+}
+iframe{
+    margin-left: 30%;
+}
+form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
