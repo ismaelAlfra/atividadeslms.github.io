@@ -8,29 +8,55 @@
         src: url("Comfortaa-Light.ttf") format("truetype");
     }
     .menu-baixo{
-        text-align: center;
         width: 100%;
-        height: 60px;;
+        /* height: 120px; */
+        bottom: 0%;
+        position: absolute;
+        /* overflow: hidden; */
+    }
+    .menu-baixo  ul li{
+        list-style-type: none;
+        padding: 3px;
+        display: inline-block;
+    }
+    
+    .opcoes{
+        width: 100%;
+        height: 50px;
         text-align: center;
+        background-color: #7B9BDD;
         display: flex;
         justify-content: center;
-        bottom: 0%;
-        position: fixed;
-        background-color: #7B9BDD;
-        z-index: 2;
+        align-items: center;
+        
     }
-    ul li{
-        padding: 8px;
-        list-style-type: none;
-        float: left;
-        cursor: pointer;
+    .sub-opcoes{
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        
     }
-    ul li p{
-        padding: 10px;
+    .opcoes ul li h1{
+        padding: 6px;
         border: solid 2px white;
         border-radius: 20px;
         color: white;
         font-family: 'Comfortaa';
-        font-size: 13px;
+        font-size: 12px;
+        transition: all 0.4s;
+    }
+    .sub-opcoes ul li h2{
+        padding: 6px;
+        border: solid 2px #7B9BDD;
+        border-radius: 20px;
+        color: #7B9BDD;
+        font-family: 'Comfortaa';
+        font-size: 12px;
+    }
+    .selecionado{
+        background-color: rgb(51, 73, 117);
+        transform: all;
     }
 }
