@@ -79,18 +79,66 @@
         margin-top: 31px;
         margin-left: 50px;
     }
-    
-    /* .conteudo{
-        height: 100%;
+    .container{
         width: 100%;
-        background-color: aqua;
+        height: 455px;
+        top: 50%;
+        transform: translate(0, -45%);
         position: absolute;
-    } */
+        overflow: scroll;
+        display: flex;
+        align-items: center;
+    }
+    .conteudo{
+        height: 450px;
+        width: 300%;
+        /* margin: 50px; */
+        /* background-color: blue; */
+        float: left;
+        /* margin: 30px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .caixas{
+        width: 280px;
+        height: 400px;
+        background-color: rgb(230, 230, 230);
+        float: left;
+        margin: 15px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+    .titulo{
+        width: 100%;
+        height: 50px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo h1{
+        color: white;
+        font-family: "Comfortaa"; 
+        font-size: 20px;
+
+    }
+    #planejamento{
+        background-color: #FFAF7B;
+    }
+    #andamento{
+        background-color: #4AADFF;
+    }
+    #conquistas{
+        background-color: #46CAC3;
+    }
+   
     .menu-baixo{
         width: 100%;
         /* height: 120px; */
         bottom: 0%;
-        position: absolute;
+        position: fixed;
         /* overflow: hidden; */
     }
     .menu-baixo ul li{
