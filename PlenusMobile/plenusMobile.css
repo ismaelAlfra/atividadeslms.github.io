@@ -200,3 +200,8 @@
         height: 270px;
     }
 }
+@media(min-height: 570px){
+    .caixas{
+        height: 400px;
+    }
+}
