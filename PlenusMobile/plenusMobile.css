@@ -90,6 +90,7 @@
         overflow: scroll;
         display: flex;
         align-items: center;
+        overflow-y: hidden;
     }
     .conteudo{
         height: 100%;
@@ -101,6 +102,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
 
     }
     .caixas{
@@ -134,11 +136,69 @@
     }
     #conquistas{
         background-color: #46CAC3;
+    } 
+    .add{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        bottom: 15%;
+        right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient( #7B9BDD, #81CBD0);
     }
     .add img{
         height: 30px;
         width: auto;
     }
+    .adicionando{
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 89%;
+        background-color: white;
+        bottom: 0%;
+        text-align: center;
+    }
+    .adicionando .etapa{
+        background-color: #7B9BDD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        display: inline-block;
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+        font-family: "Comfortaa";
+        border-radius: 20px;
+    }
+    .adicionando .form{
+        width: 80%;
+        display: inline-block;
+        margin: 20px;
+    }
+    .adicionando .form input{
+        width: 100%;
+        border: solid 2px rgb(185, 185, 185);
+        font-size: 20px;
+        border-radius: 20px;
+        outline: none;
+    }
+    .adicionando .form input::-webkit-input-placeholder{
+        font-size: 15px;
+        color: rgb(214, 214, 214);
+    }
+    .adicionando .form p{
+        color: #4A79DA;
+        font-family: 'Comfortaa';
+        float: left;
+        margin-bottom: 7px;
+    }
+
    .menu-baixo{
         width: 100%;
         /* height: 120px; */
@@ -199,20 +259,7 @@
     .abrir{
         height: 100px;
     }
-    .add{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 1;
-        bottom: 15%;
-        right: 5%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: linear-gradient( #7B9BDD, #81CBD0);
-        
-    }
+   
     
     
 }
