@@ -81,7 +81,7 @@
     }
     .container{
         width: 100%;
-        height: 455px;
+        height: 65%;
         top: 50%;
         transform: translate(0, -45%);
         position: absolute;
@@ -90,7 +90,7 @@
         align-items: center;
     }
     .conteudo{
-        height: 450px;
+        height: 100%;
         width: 300%;
         /* margin: 50px; */
         /* background-color: blue; */
@@ -133,12 +133,16 @@
     #conquistas{
         background-color: #46CAC3;
     }
-   
-    .menu-baixo{
+    .add img{
+        height: 30px;
+        width: auto;
+    }
+   .menu-baixo{
         width: 100%;
         /* height: 120px; */
         bottom: 0%;
         position: fixed;
+        z-index: 2;
         /* overflow: hidden; */
     }
     .menu-baixo ul li{
@@ -198,7 +202,7 @@
         height: 50px;
         border-radius: 50%;
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         bottom: 15%;
         right: 5%;
         display: flex;
@@ -207,10 +211,7 @@
         background-image: linear-gradient( #7B9BDD, #81CBD0);
         
     }
-    .add img{
-        height: 30px;
-        width: auto;
-    }
+    
     
 }
 @media(max-height: 450px){
