@@ -175,18 +175,30 @@
         color: white;
         font-family: "Comfortaa";
         border-radius: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
     .adicionando .form{
         width: 80%;
         display: inline-block;
         margin: 20px;
     }
-    .adicionando .form input{
+    .adicionando .form .caixa-input{
         width: 100%;
+        height: 30px;
         border: solid 2px rgb(185, 185, 185);
         font-size: 20px;
         border-radius: 20px;
+        
+        display: flex;
+        align-items: center;
+    }
+    .adicionando .form .caixa-input input{
+        margin-left: 7px;
+        width: 90%;
+        border: none;
         outline: none;
+        font-size: 15px;
     }
     .adicionando .form input::-webkit-input-placeholder{
         font-size: 15px;
@@ -198,7 +210,38 @@
         float: left;
         margin-bottom: 7px;
     }
-
+    .adicionando .cancelar{
+        height: 60px;
+        width: 60px;
+        background-color: #F39292;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+    .adicionando .cancelar img{
+        height: 25px;
+        width: auto;
+    }
+    .adicionando .proximo{
+        height: 60px;
+        width: 60px;
+        background-color: #7B9BDD;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+    }
+    .adicionando .proximo img{
+        height: 25px;
+        width: auto;
+    }
    .menu-baixo{
         width: 100%;
         /* height: 120px; */
