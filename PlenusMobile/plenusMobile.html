@@ -44,7 +44,13 @@
             <p>Categoria</p>
             <br>
             <div class="caixa-input">
-                <input type="text" maxlength="15">
+                <select name="categoria" id="categoria">
+                    <option value="">Estudo</option>
+                    <option value="">Estudo</option>
+                    <option value="">Estudo</option>
+                    <option value="">Estudo</option>
+                    
+                </select>
             </div>
         </div>
         <div class="form">
@@ -79,39 +85,46 @@
             </div>
         </div>
         <div class="form">
-            <p style="margin-bottom: 0">Dia da Semana</p>
+            <p style="margin-bottom: 0">Dia(s) da Semana</p>
             <br>
             <div class="dias">
                 <form action="">
-                <input type="checkbox" id="dom"  value="domingo">
-                <label for="dom"><p>D</p></label>
-                <input type="checkbox" id="seg" value="segunda">
-                <label for="seg"><p>S</p></label>
-                <input type="checkbox" id="ter" value="terca">
-                <label for="ter"><p>T</p></label>
-                <input type="checkbox" id="qua" value="quarta">
-                <label for="qua"><p>Q</p></label>
-                <input type="checkbox" id="qui" value="quinta">
-                <label for="qui"><p>Q</p></label>
-                <input type="checkbox" id="sex" value="sexta">
-                <label for="sex"><p>S</p></label>
-                <input type="checkbox" id="sab" value="sabado">
-                <label for="sab"><p>S</p></label>
+                <input type="checkbox" name="dom" id="dom" value="domingo">
+                <label for="dom" id="dom"><p>D</p></label>
+                <input type="checkbox" name="seg" id="seg" value="segunda">
+                <label for="seg" id="seg"><p>S</p></label>
+                <input type="checkbox" name="ter" id="ter" value="terca">
+                <label for="ter" id="ter"><p>T</p></label>
+                <input type="checkbox" name="qua" id="qua" value="quarta">
+                <label for="qua" id="qua"><p>Q</p></label>
+                <input type="checkbox" name="qui" id="qui" value="quinta">
+                <label for="qui" id="qui"><p>Q</p></label>
+                <input type="checkbox" name="sex" id="sex" value="sexta">
+                <label for="sex" id="sex"><p>S</p></label>
+                <input type="checkbox" name="sab" id="sab" value="sabado">
+                <label for="sab" id="sab"><p>S</p></label>
             </form>
             </div>   
         </div>
         <div class="form">
-            <p>O que vou fazer</p>
+            <p>Horário</p>
             <br>
-            <div class="caixa-input">
-                <input type="text" maxlength="25" placeholder="Digite o que vai fazer (Específico)">
+            <div class="caixa-input" id="horario">
+                <input type="time">
             </div>
         </div>
         <div class="form">
-            <p>Porque vou fazer</p>
+            <p>Reforçador Externo</p>
             <br>
             <div class="caixa-input">
                 <input type="text" maxlength="25" placeholder="Digite porque vai fazer (Propósito)">
+            </div>
+        </div>
+        <div class="form">
+            <p>Lembrete</p>
+            <br>
+            <div class="caixa-input">
+                <input type="text" maxlength="15">
             </div>
         </div>
         </div>

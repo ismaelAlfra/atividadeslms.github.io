@@ -316,7 +316,7 @@
     }
     .dias{
         width: 100%;
-        height: 50px;
+        height: 25px;
     }
     .dias input{
         display: none;
@@ -332,14 +332,79 @@
         border: solid 1px rgb(185, 185, 185);
         border-radius: 50%;
 
+
     }
     .apertado{
         background-color: #7B9BDD;
+       
+    }
+    .dias #dom:checked ~ #dom{
+        background-color: #7B9BDD; 
+    }
+    .dias #dom:checked ~ #dom p{
         color: white;
     }
-   
-    
-    
+    .dias #seg:checked ~ #seg{
+        background-color: #7B9BDD; 
+    }
+    .dias #seg:checked ~ #seg p{
+        color: white;
+    }
+    .dias #ter:checked ~ #ter{
+        background-color: #7B9BDD; 
+    }
+    .dias #ter:checked ~ #ter p{
+        color: white;
+    }
+    .dias #qua:checked ~ #qua{
+        background-color: #7B9BDD; 
+    }
+    .dias #qua:checked ~ #qua p{
+        color: white;
+    }
+    .dias #qui:checked ~ #qui{
+        background-color: #7B9BDD; 
+    }
+    .dias #qui:checked ~ #qui p{
+        color: white;
+    }
+    .dias #sex:checked ~ #sex{
+        background-color: #7B9BDD; 
+    }
+    .dias #sex:checked ~ #sex p{
+        color: white;
+    }
+    .dias #sab:checked ~ #sab{
+        background-color: #7B9BDD; 
+    }
+    .dias #sab:checked ~ #sab p{
+        color: white;
+    }
+    #horario{
+        width: 100px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        float: left;
+        margin-right: 200px;
+    }
+    #horario input{
+        width: 70px;
+    }
+    /* #deixa{
+        display: none;
+    } */
+    .caixa-input select{
+        border: none;
+        margin-left: 5px;
+        font-size: 15px;
+        outline: none;
+    }
+    option{
+        font-size: 12px;
+        border: solid 2px blue;
+        display: block;
+    }
 }
 @media(max-height: 450px){
     .caixas{

@@ -33,21 +33,26 @@ let input = dias.querySelectorAll("input");
 let label = dias.querySelectorAll("label");
 console.log(input);
 
-function seleDias(){
-    for(let i = 0; i < label.length; i++){
-        if(label[i].addEventListener("click", function(){
-            label[i].classList.add("apertado");
-            label[i].style.color = "white";
+// function seleDias(){
+//     for(let i = 0; i < label.length; i++){
+//         label[i].addEventListener("click", function(){
+//         if(input[i].checked == false){
+//             label[i].classList.remove("apertado"); 
+//             console.log("deschecou");
+//         }
+//         else if(input[i].checked == true){
+//             console.log("checou");
+//             label[i].classList.add("apertado");
+//         }
+//     })
+//     }
+// }
             // for(x of label){
             //     if(x != label[i]){
             //         x.classList.remove("apertado");
             //     }
             // }
-        })){
-        }
-    }
-}
+  
 
-
-seleDias();
+// seleDias();
 select();
