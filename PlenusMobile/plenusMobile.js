@@ -37,14 +37,13 @@ function seleDias(){
     for(let i = 0; i < label.length; i++){
         if(label[i].addEventListener("click", function(){
             label[i].classList.add("apertado");
-            for(x of label){
-                if(x != label[i]){
-                    x.classList.remove("apertado");
-                }
-            }
+            label[i].style.color = "white";
+            // for(x of label){
+            //     if(x != label[i]){
+            //         x.classList.remove("apertado");
+            //     }
+            // }
         })){
-           
-
         }
     }
 }
