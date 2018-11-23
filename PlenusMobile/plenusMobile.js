@@ -34,23 +34,21 @@ let label = dias.querySelectorAll("label");
 console.log(input);
 
 function seleDias(){
-    for(let i = 0; i < input.length; i++){
+    for(let i = 0; i < label.length; i++){
         if(label[i].addEventListener("click", function(){
-            console.log("clicou");
-            console.log(input);
-            if(input[i].checked == true){
-                label[i].classList.add("apertado");
-            }
+            label[i].classList.add("apertado");
             for(x of label){
                 if(x != label[i]){
                     x.classList.remove("apertado");
                 }
             }
-
         })){
+           
 
         }
     }
 }
+
+
 seleDias();
 select();
