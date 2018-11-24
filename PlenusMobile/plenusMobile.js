@@ -77,9 +77,10 @@ cancelar.addEventListener("click", function(){
 // }
 
 prox.addEventListener("click", function(){
-    for(i of o=input_rotina){
+    for(i of input_rotina){
         if(i.value == ""){
             alert("Preencha todos os campos");
+            break;
             i.placeholder = "*Preencha este campo";
         }
     }
