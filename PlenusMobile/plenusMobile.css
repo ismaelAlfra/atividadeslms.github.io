@@ -470,3 +470,16 @@
         height: 400px;
     }
 }
+@media(max-height: 500px){
+    .adicionando{
+        height: 50%;
+        margin-top: 150px;
+    }
+    .adicionando .form{
+        margin: 0;
+        padding: 0;
+    }
+    .pesquisa{
+        display: none;
+    }
+}
