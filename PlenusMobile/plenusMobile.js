@@ -31,28 +31,29 @@ function select(){
 let dias = document.querySelector(".dias");
 let input = dias.querySelectorAll("input");
 let label = dias.querySelectorAll("label");
-console.log(input);
+let add = document.querySelector(".add");
+let rotina = document.querySelector("#rotina");
+let cancelar = document.querySelector(".cancelar");
 
-// function seleDias(){
-//     for(let i = 0; i < label.length; i++){
-//         label[i].addEventListener("click", function(){
-//         if(input[i].checked == false){
-//             label[i].classList.remove("apertado"); 
-//             console.log("deschecou");
-//         }
-//         else if(input[i].checked == true){
-//             console.log("checou");
-//             label[i].classList.add("apertado");
-//         }
-//     })
-//     }
+// function mouseDown(){
+//     add.style.backgroundColor = "green";
+//     // add.style.width = "30px";
+//     // add.style.heigth = "30px";
 // }
-            // for(x of label){
-            //     if(x != label[i]){
-            //         x.classList.remove("apertado");
-            //     }
-            // }
-  
-
-// seleDias();
+// function mouseUp(){
+//     console.log("jcjc");
+//     add.style.backgroundColor = "blue";
+//     // add.style.heigth = "50px";
+// }
+add.addEventListener("click", function(){
+    rotina.style.height = "80%";
+    rotina.style.width = "100%";
+    rotina.style.opacity = "1";
+    // rotina.style.display = "block";
+})
+cancelar.addEventListener("click", function(){
+    rotina.style.height = "0";
+    rotina.style.width = "0";
+    rotina.style.opacity = "0";
+})
 select();
