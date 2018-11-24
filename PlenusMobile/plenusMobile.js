@@ -1,8 +1,8 @@
 let subOpcoes = document.querySelectorAll(".sub-opcoes");
 let opcoes = document.querySelector(".opcoes");
 let txt = opcoes.querySelectorAll("h1");
-console.log(txt);
-console.log(subOpcoes);
+// console.log(txt);
+// console.log(subOpcoes);
 
 function select(){
     for(let i = 0; i < txt.length;i++){
@@ -33,7 +33,10 @@ let input = dias.querySelectorAll("input");
 let label = dias.querySelectorAll("label");
 let add = document.querySelector(".add");
 let rotina = document.querySelector("#rotina");
+let input_rotina = rotina.querySelectorAll("input");
 let cancelar = document.querySelector(".cancelar");
+let prox = document.querySelector(".proximo");
+console.log(input_rotina);
 
 // function mouseDown(){
 //     add.style.backgroundColor = "green";
@@ -56,4 +59,30 @@ cancelar.addEventListener("click", function(){
     rotina.style.width = "0";
     rotina.style.opacity = "0";
 })
+// function aparecer(){
+//      let aux = 0;
+//     for(i of input_rotina){
+       
+//         if(i.value == ""){
+//             aux++;
+//         }
+//     }
+//     if(aux == 0){
+//         prox.style.display = "flex";
+//     }
+//     else if(aux != 0){
+//         prox.style.display = "none";  
+//     }
+    
+// }
+
+prox.addEventListener("click", function(){
+    for(i of o=input_rotina){
+        if(i.value == ""){
+            alert("Preencha todos os campos");
+            i.placeholder = "*Preencha este campo";
+        }
+    }
+})
+
 select();

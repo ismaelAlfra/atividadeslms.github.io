@@ -229,6 +229,7 @@
         bottom: 5%;
         left: 5%;
         float: left;
+        overflow: hidden;
     }
     .adicionando .cancelar img{
         height: 25px;
@@ -246,6 +247,8 @@
         bottom: 5%;
         right: 5%;
         float: right;
+        overflow: hidden;
+        /* display: none; */
     }
     .adicionando .proximo img{
         height: 25px;
@@ -471,10 +474,10 @@
     }
 }
 @media(max-height: 500px){
-    .adicionando{
-        height: 50%;
+    /* .adicionando{
+        height: 400px;
         margin-top: 150px;
-    }
+    } */
     .adicionando .form{
         margin: 0;
         padding: 0;
@@ -487,10 +490,10 @@
     }
 }
 @media(max-height: 555px){
-    .adicionando{
-        height: 50%;
+    /* .adicionando{
+        height: 400px;
         margin-top: 150px;
-    }
+    } */
     .adicionando .form p{
         margin: 0;
         padding: 0;
@@ -500,6 +503,9 @@
     }
     .container{
         top: 47%;
+    }
+    .caixas{
+        height: 90%;
     }
 
     .pesquisa{
