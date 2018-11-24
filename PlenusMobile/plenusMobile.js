@@ -32,6 +32,7 @@ let dias = document.querySelector(".dias");
 let input = dias.querySelectorAll("input");
 let label = dias.querySelectorAll("label");
 let add = document.querySelector(".add");
+let deixa = document.querySelector("#deixa");
 let rotina = document.querySelector("#rotina");
 let input_rotina = rotina.querySelectorAll("input");
 let cancelar = document.querySelector(".cancelar");
@@ -59,31 +60,45 @@ cancelar.addEventListener("click", function(){
     rotina.style.width = "0";
     rotina.style.opacity = "0";
 })
-// function aparecer(){
-//      let aux = 0;
-//     for(i of input_rotina){
+function aparecer(){
+    let aux = 0;
+    for(i of input_rotina){
        
-//         if(i.value == ""){
-//             aux++;
-//         }
-//     }
-//     if(aux == 0){
-//         prox.style.display = "flex";
-//     }
-//     else if(aux != 0){
-//         prox.style.display = "none";  
-//     }
+        if(i.value == ""){
+            aux++;
+        }
+    }
+    if(aux == 0){
+        prox.style.display = "flex";
+    }
+    else if(aux != 0){
+        prox.style.display = "none";  
+    }
     
-// }
+}
 
 prox.addEventListener("click", function(){
     for(i of input_rotina){
         if(i.value == ""){
             alert("Preencha todos os campos");
             break;
-            i.placeholder = "*Preencha este campo";
+            
+        }
+        else{
+            let aux = 0;
+            for(i of input_rotina){
+       
+                if(i.value == ""){
+                    aux++;
+                }
+            }
+            if(aux == 0){
+                deixa.style.display = "block";
+                rotina.style.width = "0";
+            
         }
     }
+}
 })
 
 select();
