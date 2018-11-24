@@ -16,7 +16,7 @@
         align-items: center;
         position: absolute;
         /* position: fixed; */
-        z-index: 2;
+        z-index: 5;
     }
     .menu-topo #logo{
         padding: 10px;
