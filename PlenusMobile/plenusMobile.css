@@ -498,6 +498,9 @@
     .adicionando .form{
         margin: 5px;
     }
+    .container{
+        top: 47%;
+    }
 
     .pesquisa{
         display: none;
