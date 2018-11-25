@@ -324,10 +324,6 @@
         width: 100%;
         height: auto;
         float: left;
-        margin-top: 20px;
-    }
-    #deixa{
-        height: 85%;
     }
     .dias{
         width: 100%;
@@ -494,6 +490,17 @@
     }
     #deixa .form{
         margin: 0;
+        margin-top: 5px;
+    }
+    #deixa .form .caixa-input{
+        margin: 0;
+    }
+    #deixa{
+        height: 85%;
+    }
+    #deixa label{
+        margin: 0;
+        margin-right: 14px;
     }
 
 }
@@ -515,11 +522,28 @@
     .caixas{
         height: 90%;
     }
+    .div2{
+        margin-top: 10px;
+    }
 
     .pesquisa{
         display: none;
     }
     .menu-topo{
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.26);
+    }
+    #deixa .form{
+        margin: 0;
+        margin-top: 5px;
+    }
+    #deixa .form .caixa-input{
+        margin: 0;
+    }
+    #deixa{
+        height: 85%;
+    }
+    #deixa label{
+        margin: 0;
+        margin-right: 14px;
     }
 }
