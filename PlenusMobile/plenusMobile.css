@@ -324,6 +324,10 @@
         width: 100%;
         height: auto;
         float: left;
+        margin-top: 20px;
+    }
+    #deixa{
+        height: 85%;
     }
     .dias{
         width: 100%;
