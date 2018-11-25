@@ -1,8 +1,7 @@
 let subOpcoes = document.querySelectorAll(".sub-opcoes");
 let opcoes = document.querySelector(".opcoes");
 let txt = opcoes.querySelectorAll("h1");
-// console.log(txt);
-// console.log(subOpcoes);
+
 
 function select(){
     for(let i = 0; i < txt.length;i++){
@@ -54,21 +53,10 @@ let cancelar = document.querySelector(".cancelar");
 
 console.log(input_rotina);
 
-// function mouseDown(){
-//     add.style.backgroundColor = "green";
-//     // add.style.width = "30px";
-//     // add.style.heigth = "30px";
-// }
-// function mouseUp(){
-//     console.log("jcjc");
-//     add.style.backgroundColor = "blue";
-//     // add.style.heigth = "50px";
-// }
 add.addEventListener("click", function(){
     rotina.style.height = "80%";
     rotina.style.width = "100%";
     rotina.style.opacity = "1";
-    // rotina.style.display = "block";
 })
 cancelar.addEventListener("click", function(){
     rotina.style.height = "0";
@@ -91,32 +79,6 @@ function aparecer(){
     }
     
 }
-
-// prox.addEventListener("click", function(){
-//     for(i of input_rotina){
-//         if(i.value == ""){
-//             alert("Preencha todos os campos");
-//             break;
-            
-//         }
-//         else{
-//             let aux = 0;
-//             for(i of input_rotina){
-       
-//                 if(i.value == ""){
-//                     aux++;
-//                 }
-//             }
-//             if(aux == 0){
-//                 deixa.style.width = "100%";
-//                 deixa.style.height = "auto";
-//                 rotina.style.width = "0";
-//                 rotina.style.height = "0";
-            
-//         }
-//     }
-// }
-// })
 function comport(dados, etapa1, etapa2){
     for(i of dados){
         if(i.value == ""){
@@ -144,6 +106,10 @@ function comport(dados, etapa1, etapa2){
     }
 }
 }
+let sele = rotina.querySelector("select");
+let opt = sele.querySelectorAll("option");
+console.log(opt);
+
 function voltar(cancel, etapa1, etapa2){
     cancel.addEventListener("click", function(){
         console.log("qualquer coisa");
@@ -154,21 +120,35 @@ function voltar(cancel, etapa1, etapa2){
         etapa1.style.height = "80%";
         etapa1.style.opacity = "1" ;
     })
-
-    
 }
-
 proxRo.addEventListener("click", function(){
     comport(input_rotina, rotina, deixa);
-    let valores = [];
-for (x of input_rotina){
-    valores.push(x.name.value);
-}
-console.log(valores);
+
 });
 proxDe.addEventListener("click", function(){
     comport(input_deixa, deixa, recom);
 });
+proxRe.addEventListener("click", function(){
+    let categoria = "";
+    for(i of opt){
+        if(i.selected == true){
+            categoria = i.value;
+        }
+    }
+    $.ajax({
+    type:'POST',
+    url: 'http://localhost:3000/habitos',
+    data: {nome: input_rotina[0].value,
+        categoria: categoria, fazer: input_rotina[1].value, 
+        porque: input_rotina[2].value},
+
+    success: function(){
+        console.log("foi");
+    }
+})
+})
+
+
 voltar(cancelDe, rotina, deixa);
 voltar(cancelRe, deixa, recom);
 select();
