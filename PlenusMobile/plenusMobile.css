@@ -551,3 +551,12 @@
         margin-right: 14px;
     }
 }
+@media(max-height: 640px){
+    #deixa .form{
+        margin: 0;
+        margin-top: 10px;
+    }
+    .div2{
+        margin-top: 10px;
+    }
+}

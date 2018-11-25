@@ -157,8 +157,14 @@ function voltar(cancel, etapa1, etapa2){
 
     
 }
+
 proxRo.addEventListener("click", function(){
     comport(input_rotina, rotina, deixa);
+    let valores = [];
+for (x of input_rotina){
+    valores.push(x.name.value);
+}
+console.log(valores);
 });
 proxDe.addEventListener("click", function(){
     comport(input_deixa, deixa, recom);
