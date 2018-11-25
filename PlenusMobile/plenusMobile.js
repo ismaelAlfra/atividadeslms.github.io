@@ -32,11 +32,21 @@ let dias = document.querySelector(".dias");
 let input = dias.querySelectorAll("input");
 let label = dias.querySelectorAll("label");
 let add = document.querySelector(".add");
-let deixa = document.querySelector("#deixa");
+
 let rotina = document.querySelector("#rotina");
 let input_rotina = rotina.querySelectorAll("input");
+let proxRo = rotina.querySelector(".proximo");
+
+let deixa = document.querySelector("#deixa");
+let input_deixa = deixa.querySelectorAll("input");
+let proxDe = deixa.querySelector(".proximo");
+
+let recom = document.querySelector("#recompensa");
+let input_recom = recom.querySelectorAll("input");
+let proxRe = recom.querySelector(".proximo");
+
 let cancelar = document.querySelector(".cancelar");
-let prox = document.querySelector(".proximo");
+
 console.log(input_rotina);
 
 // function mouseDown(){
@@ -77,8 +87,33 @@ function aparecer(){
     
 }
 
-prox.addEventListener("click", function(){
-    for(i of input_rotina){
+// prox.addEventListener("click", function(){
+//     for(i of input_rotina){
+//         if(i.value == ""){
+//             alert("Preencha todos os campos");
+//             break;
+            
+//         }
+//         else{
+//             let aux = 0;
+//             for(i of input_rotina){
+       
+//                 if(i.value == ""){
+//                     aux++;
+//                 }
+//             }
+//             if(aux == 0){
+//                 deixa.style.width = "100%";
+//                 deixa.style.height = "auto";
+//                 rotina.style.width = "0";
+//                 rotina.style.height = "0";
+            
+//         }
+//     }
+// }
+// })
+function comport(dados, etapa1, etapa2){
+    for(i of dados){
         if(i.value == ""){
             alert("Preencha todos os campos");
             break;
@@ -86,19 +121,27 @@ prox.addEventListener("click", function(){
         }
         else{
             let aux = 0;
-            for(i of input_rotina){
+            for(i of dados){
        
                 if(i.value == ""){
                     aux++;
                 }
             }
             if(aux == 0){
-                deixa.style.display = "block";
-                rotina.style.width = "0";
+                etapa2.style.width = "100%";
+                etapa2.style.height = "auto";
+                etapa1.style.width = "0";
+                etapa1.style.height = "0";
             
         }
     }
 }
-})
+}
+proxRo.addEventListener("click", function(){
+    comport(input_rotina, rotina, deixa);
+});
+proxDe.addEventListener("click", function(){
+    comport(input_deixa, deixa, recom);
+});
 
 select();
