@@ -129,7 +129,7 @@ function comport(dados, etapa1, etapa2){
             }
             if(aux == 0){
                 etapa2.style.width = "100%";
-                etapa2.style.height = "auto";
+                etapa2.style.height = "80%";
                 etapa1.style.width = "0";
                 etapa1.style.height = "0";
             
