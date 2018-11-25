@@ -36,14 +36,19 @@ let add = document.querySelector(".add");
 let rotina = document.querySelector("#rotina");
 let input_rotina = rotina.querySelectorAll("input");
 let proxRo = rotina.querySelector(".proximo");
+let cancelRo = rotina.querySelector(".cancelar");
 
 let deixa = document.querySelector("#deixa");
 let input_deixa = deixa.querySelectorAll("input");
 let proxDe = deixa.querySelector(".proximo");
+let cancelDe = deixa.querySelector(".cancelar");
+
 
 let recom = document.querySelector("#recompensa");
 let input_recom = recom.querySelectorAll("input");
 let proxRe = recom.querySelector(".proximo");
+let cancelRe = recom.querySelector(".cancelar");
+
 
 let cancelar = document.querySelector(".cancelar");
 
@@ -130,12 +135,27 @@ function comport(dados, etapa1, etapa2){
             if(aux == 0){
                 etapa2.style.width = "100%";
                 etapa2.style.height = "80%";
+                etapa2.style.opacity = "1" ;
                 etapa1.style.width = "0";
                 etapa1.style.height = "0";
+                etapa1.style.opacity = "0" ;
             
         }
     }
 }
+}
+function voltar(cancel, etapa1, etapa2){
+    cancel.addEventListener("click", function(){
+        console.log("qualquer coisa");
+        etapa2.style.width = "0";
+        etapa2.style.height = "0" ;
+        etapa2.style.opacity = "0" ;
+        etapa1.style.width = "100%";
+        etapa1.style.height = "80%";
+        etapa1.style.opacity = "1" ;
+    })
+
+    
 }
 proxRo.addEventListener("click", function(){
     comport(input_rotina, rotina, deixa);
@@ -143,5 +163,6 @@ proxRo.addEventListener("click", function(){
 proxDe.addEventListener("click", function(){
     comport(input_deixa, deixa, recom);
 });
-
+voltar(cancelDe, rotina, deixa);
+voltar(cancelRe, deixa, recom);
 select();
