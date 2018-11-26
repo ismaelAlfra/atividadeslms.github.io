@@ -47,11 +47,13 @@ let recom = document.querySelector("#recompensa");
 let input_recom = recom.querySelectorAll("input");
 let proxRe = recom.querySelector(".proximo");
 let cancelRe = recom.querySelector(".cancelar");
+console.log(input_recom);
 
 
 let cancelar = document.querySelector(".cancelar");
 
 console.log(input_rotina);
+console.log(input_deixa);
 
 add.addEventListener("click", function(){
     rotina.style.height = "80%";
@@ -109,6 +111,8 @@ function comport(dados, etapa1, etapa2){
 let sele = rotina.querySelector("select");
 let opt = sele.querySelectorAll("option");
 console.log(opt);
+let seleRe = recom.querySelector("select");
+let optRe = seleRe.querySelectorAll("option");
 
 function voltar(cancel, etapa1, etapa2){
     cancel.addEventListener("click", function(){
@@ -128,6 +132,23 @@ proxRo.addEventListener("click", function(){
 proxDe.addEventListener("click", function(){
     comport(input_deixa, deixa, recom);
 });
+let recom1 = document.querySelector("#recompensa1");
+let metas = recom1.querySelectorAll("input");
+let tempo = document.querySelectorAll("#tempo");
+let cont = document.querySelector("#cont");
+let dete = document.querySelector("#dete");
+
+dete.addEventListener("click", function(){
+    for(i of tempo){
+        i.style.display = "block";
+    }
+})
+cont.addEventListener("click", function(){
+    for(i of tempo){
+        i.style.display = "none";
+    }
+})
+
 proxRe.addEventListener("click", function(){
     let categoria = "";
     for(i of opt){
@@ -135,20 +156,57 @@ proxRe.addEventListener("click", function(){
             categoria = i.value;
         }
     }
+    let dia = [];
+    for(x of input){
+        if(x.checked == true){
+            dia.push(x.value);
+        }
+    }
+    let meta = "";
+    for(y of metas){
+        if(y.checked == true){
+            meta = y.value;
+        }
+    }
+    let periodo = "";
+    for(z of optRe){
+        if(z.selected == true){
+            periodo = z.value;
+        }
+    }
     $.ajax({
     type:'POST',
     url: 'http://localhost:3000/habitos',
     data: {nome: input_rotina[0].value,
         categoria: categoria, fazer: input_rotina[1].value, 
-        porque: input_rotina[2].value},
+        porque: input_rotina[2].value, 
+        lugar: input_deixa[0].value, 
+        dias:{dia}, horario: input_deixa[8].value, 
+        reforco: input_deixa[9].value, 
+        lembrete: input_deixa[10].value, 
+        meta:[{meta: meta, periodo: periodo, unidade: input_recom[2].value, pretende: input_recom[3].value}],
+        recompensa: input_recom[4].value},
+
 
     success: function(){
+        event.preventDefault()
         console.log("foi");
+        retornar();
     }
 })
 })
+function retornar(){
+    $.ajax({
+    type: "GET",
+    url: 'http://localhost:3000/habitos',
+    success: function(data){
+        event.preventDefault()
+        console.log(data);
+    }
+    });
+}
 
-
+retornar();
 voltar(cancelDe, rotina, deixa);
 voltar(cancelRe, deixa, recom);
 select();

@@ -467,6 +467,9 @@
     input{
         background-color: transparent;
     }
+    #tempo{
+        display: none;
+    }
 }
 @media(max-height: 450px){
     .caixas{
@@ -566,4 +569,8 @@
     .container{
         height: auto;
     }
+    .caixas{
+        height: 390px;;
+    }
+    
 }

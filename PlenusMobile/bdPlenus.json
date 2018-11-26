@@ -16,6 +16,239 @@
       "fazer": "ASs",
       "porque": "sS",
       "id": 3
+    },
+    {
+      "nome": "Xero da pinta",
+      "categoria": "lazer",
+      "fazer": "Parar com isso",
+      "porque": "Pq o pedro fica olhando",
+      "id": 4
+    },
+    {
+      "nome": "Xero da pinta",
+      "categoria": "lazer",
+      "fazer": "Parar com isso",
+      "porque": "Pq o Pedro fica olhando",
+      "id": 5
+    },
+    {
+      "nome": "Xero da Pinta",
+      "categoria": "lazer",
+      "fazer": "Parar de fazer isso",
+      "porque": "Pq o Pedro fica olhando",
+      "lugar": "UFC",
+      "dias[]": [
+        "segunda",
+        "terca",
+        "quarta",
+        "quinta",
+        "sexta"
+      ],
+      "horario": "domingo",
+      "reforco": "segunda",
+      "lembrete": "terca",
+      "id": 6
+    },
+    {
+      "nome": "marimbar",
+      "categoria": "lazer",
+      "fazer": "Deixar de marimba",
+      "porque": "Pelo bem da nation",
+      "lugar": "Aqui",
+      "dias[]": [
+        "segunda",
+        "terca",
+        "quarta",
+        "quinta"
+      ],
+      "horario": "12:00",
+      "reforco": "Marimba",
+      "lembrete": "Marimbar é bom",
+      "id": 7
+    },
+    {
+      "nome": "dasds",
+      "categoria": "alimentacao",
+      "fazer": "ada",
+      "porque": "dad",
+      "lugar": "add",
+      "dias[]": [
+        "segunda",
+        "terca"
+      ],
+      "horario": "11:11",
+      "reforco": "sdssd",
+      "lembrete": "sd",
+      "meta": "",
+      "id": 8
+    },
+    {
+      "nome": "Blabla",
+      "categoria": "esporte",
+      "fazer": "Bla",
+      "porque": "Bla",
+      "lugar": "Blasil",
+      "dias[]": [
+        "domingo",
+        "sabado"
+      ],
+      "horario": "12:12",
+      "reforco": "des",
+      "lembrete": "as",
+      "meta": "",
+      "id": 9
+    },
+    {
+      "nome": "wdw",
+      "categoria": "alimentacao",
+      "fazer": "dw",
+      "porque": "wdwd",
+      "lugar": "wdwd",
+      "dias[]": [
+        "domingo",
+        "segunda"
+      ],
+      "horario": "12:01",
+      "reforco": "wdw",
+      "lembrete": "wdw",
+      "meta": "",
+      "id": 10
+    },
+    {
+      "nome": "dgddf",
+      "categoria": "alimentacao",
+      "fazer": "dfgdfg",
+      "porque": "dg",
+      "lugar": "gdg",
+      "dias[dia][]": [
+        "domingo",
+        "segunda",
+        "terca",
+        "quarta"
+      ],
+      "horario": "11:01",
+      "reforco": "da",
+      "lembrete": "ff",
+      "id": 11
+    },
+    {
+      "nome": "dasd",
+      "categoria": "alimentacao",
+      "fazer": "asdasas",
+      "porque": "d",
+      "lugar": "dasd",
+      "horario": "11:11",
+      "reforco": "ssddf",
+      "lembrete": "fsdfs",
+      "id": 12
+    },
+    {
+      "nome": "dad",
+      "categoria": "alimentacao",
+      "fazer": "sadas",
+      "porque": "da",
+      "lugar": "add",
+      "dias[dia][]": [
+        "segunda",
+        "quarta",
+        "quinta",
+        "sexta"
+      ],
+      "horario": "11:01",
+      "reforco": "sdsd",
+      "lembrete": "sdsd",
+      "meta[meta]": "determinado",
+      "meta[periodo]": "",
+      "meta[unidade]": "4",
+      "meta[pretende]": "sds",
+      "recompensa": "sdsd",
+      "id": 13
+    },
+    {
+      "nome": "dad",
+      "categoria": "alimentacao",
+      "fazer": "sadas",
+      "porque": "da",
+      "lugar": "add",
+      "dias[dia][]": [
+        "segunda",
+        "quarta",
+        "quinta",
+        "sexta"
+      ],
+      "horario": "11:01",
+      "reforco": "sdsd",
+      "lembrete": "sdsd",
+      "meta[meta]": "determinado",
+      "meta[periodo]": "",
+      "meta[unidade]": "4",
+      "meta[pretende]": "sds",
+      "recompensa": "sdsd",
+      "id": 14
+    },
+    {
+      "nome": "sdsfs",
+      "categoria": "alimentacao",
+      "fazer": "fsfs",
+      "porque": "df",
+      "lugar": "fdsd",
+      "dias[dia][]": [
+        "domingo",
+        "segunda",
+        "terca"
+      ],
+      "horario": "11:01",
+      "reforco": "fgd",
+      "lembrete": "dgd",
+      "meta[meta]": "determinado",
+      "meta[periodo]": "semanas",
+      "meta[unidade]": "5",
+      "meta[pretende]": "dfdf",
+      "recompensa": "df",
+      "id": 15
+    },
+    {
+      "nome": "dasdas",
+      "categoria": "alimentacao",
+      "fazer": "dasdaa",
+      "porque": "sdad",
+      "lugar": "sadas",
+      "dias[dia][]": [
+        "domingo",
+        "segunda",
+        "terca",
+        "quarta"
+      ],
+      "horario": "11:01",
+      "reforco": "sads",
+      "lembrete": "dsds",
+      "meta[0][meta]": "determinado",
+      "meta[0][periodo]": "dias",
+      "meta[0][unidade]": "5",
+      "meta[0][pretende]": "ssdf",
+      "recompensa": "dsdf",
+      "id": 16
+    },
+    {
+      "nome": "dfdsf",
+      "categoria": "alimentacao",
+      "fazer": "fdsdfd",
+      "porque": "sfsd",
+      "lugar": "dfsd",
+      "dias[dia][]": [
+        "domingo",
+        "segunda",
+        "terca"
+      ],
+      "horario": "11:11",
+      "reforco": "bdf",
+      "lembrete": "ggdf",
+      "meta[0][meta]": "determinado",
+      "meta[0][periodo]": "dias",
+      "meta[0][unidade]": "4",
+      "meta[0][pretende]": "ddg",
+      "recompensa": "gdg",
+      "id": 17
     }
   ]
 }
