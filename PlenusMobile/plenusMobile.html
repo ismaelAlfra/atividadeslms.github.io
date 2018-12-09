@@ -9,28 +9,48 @@
     <link rel="plenus icon" href="./midia/plenusicon.png">
 </head>
 <body>
-    <header>
-        <div class="menu-topo">
-            <div>
-                <img src="./midia/logo-plenus.png" alt="" id="logo">
+    <div class="inicial">
+        <header>
+            <div class="menu-topo">
+                <div>
+                    <img src="./midia/logo-plenus.png" alt="" id="logo">
+                </div>
+                <div>
+                    <img src="./midia/notas.png" alt="" id="notas">
+                </div>
+                <div class="foto">
+                    <img src="./midia/foto.png" alt="">
+                </div>
             </div>
-            <div>
-                <img src="./midia/notas.png" alt="" id="notas">
+            <div class="pesquisa">
+                <div class="buscar">
+                    <img src="./midia/buscar.png" alt="">
+                    <input type="text">
+                </div>
+                <img src="./midia/filtro.png" alt="" id="filtro">
             </div>
-            <div class="foto">
-
+        </header>
+        <div class="add">
+            <img src="./midia/add.png" alt="">
+        </div>
+        <div class="container">
+            <div class="conteudo">
+                <div class="caixas" id="planejamento">
+                    <div class="titulo"><h1>Planejamento</h1></div>
+                    <!-- <div class="item-caixa plan first" id="legal">
+                        <img class="pontos" src="./midia/pontinhos.png" alt="">
+                        <img src="./midia/open-book.png" alt="">
+                        <h2>Ler</h2>
+                    </div> -->
+                </div>
+                <div class="caixas" id="andamento">
+                    <div class="titulo"><h1>Andamento</h1></div>
+                </div>
+                <div class="caixas" id="conquistas">
+                    <div class="titulo"><h1>Conquistas</h1></div>
+                </div>
             </div>
         </div>
-        <div class="pesquisa">
-            <div class="buscar">
-                <img src="./midia/buscar.png" alt="">
-                <input type="text">
-            </div>
-            <img src="./midia/filtro.png" alt="" id="filtro">
-        </div>
-    </header>
-    <div class="add">
-        <img src="./midia/add.png" alt="">
     </div>
     <div class="adicionando" id="rotina">
         <div class="etapa">Rotina</div>
@@ -38,12 +58,18 @@
             <p>Nome do Hábito</p>
             <br>
             <div class="caixa-input">
-                <input type="text" maxlength="15" name="nome">
+                <input type="text" name="nome" maxlength="19">
             </div>
         </div>
         <div class="form">
             <p>Categoria</p>
+            <img src="./midia/information.png" alt="" class="info">
             <br>
+            <div class="explica">Opções de categorias: Alimentação, Estudos, Esportes, Lazer, Prejudiciais,
+                 Trabalho.
+                    Observação: Saiba diferenciar esporte de lazer, um esporte possui metas e seriedade maior, 
+                    o lazer é aquela hora para não se preocupar com metas
+                    use sempre seu bom senso.</div>
             <div class="caixa-input">
                 <select name="categoria" id="categoria">
                     <option value="alimentacao">Alimentação</option>
@@ -58,16 +84,24 @@
         </div>
         <div class="form">
             <p>O que vou fazer</p>
+            <img src="./midia/information.png" alt="" class="info">
             <br>
+            <div class="explica">Descreva aqui que ações vão compor seu hábito,
+                 se o nome de seu hábito foi ler, aqui você pode especicar qual leitura,
+                 por exemplo: ler Dom Casmurro de Machado de Assis.</div>
             <div class="caixa-input">
-                <input type="text" maxlength="25" placeholder="Digite o que vai fazer (Específico)" name="fazer">
+                <input type="text"  placeholder="Digite o que vai fazer (Específico)" name="fazer">
             </div>
         </div>
         <div class="form">
             <p>Porque vou fazer</p>
+            <img src="./midia/information.png" alt="" class="info">
             <br>
+            <div class="explica">Escreve o seu propósito, algo que lhe de um motivo do por que está escolhendo fazer isso,
+                 quanto mais forte e signicativo para você for esse propósito, mais fácil conseguira
+                    continuar praticando.</div>
             <div class="caixa-input">
-                <input type="text" maxlength="25" placeholder="Digite porque vai fazer (Propósito)" name="porque">
+                <input type="text" placeholder="Digite porque vai fazer (Propósito)" name="porque">
             </div>
         </div>
         <div class="cancelar">
@@ -84,7 +118,7 @@
                 <p>Lugar</p>
                 <br>
                 <div class="caixa-input">
-                    <input type="text" maxlength="15">
+                    <input type="text">
                 </div>
             </div>
             <div class="form">
@@ -118,16 +152,25 @@
             </div>
             <div class="form">
                 <p>Reforçador Externo</p>
+                <img src="./midia/information.png" alt="" class="info">
                 <br>
+                <div class="explica">O reforçador é algo que lhe ajudará a cumprir seu hábito,
+                     o objetivo aqui é facilitar o máximo para você, por exemplo se seu hábito for ler,
+                      quem sabe sempre deixar o livro em sua
+                        mochila lhe ajude a ler nas horas vagas.</div>
                 <div class="caixa-input">
-                    <input type="text" maxlength="25" placeholder="Digite porque vai fazer (Propósito)">
+                    <input type="text" placeholder="Digite porque vai fazer (Propósito)">
                 </div>
             </div>
             <div class="form">
                 <p>Lembrete</p>
+                <img src="./midia/information.png" alt="" class="info">
                 <br>
+                <div class="explica">Essa área é mais destinada ao sistema Plenus, porém uma forma de utilizar
+                     pode ser programar despertadores no celular ou colocar lembretes
+                      (post it) em lugares estratégicos.</div>
                 <div class="caixa-input">
-                    <input type="text" maxlength="15">
+                    <input type="text">
                 </div>
             </div>
         </div>
@@ -145,7 +188,11 @@
         <div class="etapa">Recompensa</div>
         <div class="form recompensa1">
             <p style="margin:0;">Metas</p>
+            <img src="./midia/information.png" alt="" class="info">
             <br>
+            <div class="explica">No campo de metas, você pode definir o hábito como determinado ou contínuo.
+                 Um hábito determinado é aquele que você pretende praticar apenas por um determinado período de tempo,
+                 e um hábito contínuo é aquele que você pretende praticar sempre.</div>
             <div class="caixa-input" id="recompensa1">
                 <input type="radio" name="recompensa" value="determinado" id="dete">
                 <label for="dete" id="dete"><div class="check"></div></label><P>Determinado</P>
@@ -174,30 +221,21 @@
         </div>
         <div class="form">
             <p>Recompensa</p>
+            <img src="./midia/information.png" alt="" class="info">
             <br>
+            <div class="explica">Escolha uma recompensa para quando realizar seu hábito.</div>
             <div class="caixa-input">
-                <input type="text" maxlength="30">
+                <input type="text">
             </div>
         </div>
         <div class="cancelar">
             <img src="./midia/cancelar.png" alt="">
         </div>
+        <div ><h2 class="exe-botao">Executar</h2></div>
         <div class="proximo">
-            <img src="/midia/prox.png" alt="">
+            <img src="/midia/check.png" alt="">
         </div>
     </div>
-    <div class="container">
-        <div class="conteudo">
-            <div class="caixas">
-                <div class="titulo" id="planejamento"><h1>Planejamento</h1></div>
-            </div>
-            <div class="caixas">
-                <div class="titulo" id="andamento"><h1>Andamento</h1></div>
-            </div>
-            <div class="caixas">
-                <div class="titulo" id="conquistas"><h1>Conquistas</h1></div>
-            </div>
-        </div>
         <!-- <div class="caixas"></div>
         <div class="caixas"></div> -->
 
@@ -237,7 +275,65 @@
                 
             </ul>
         </div>
+       
         
+    </div>
+    <div class="adicionando notas">
+        
+        <div class="etapa">Meu diário</div>
+        <div class="bloco">
+            <textarea name="" id="campo-texto" cols="30" rows="10"></textarea>
+            
+        </div>
+        
+        <div class="cancelar">
+            <img src="./midia/cancelar.png" alt="">
+        </div>
+        <div class="proximo">
+            <img src="/midia/prox.png" alt="">
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal2"></div>
+        <div class="habito-plan">
+            <h1>Ler</h1>
+            <h2 class="botoes" id="editar">Editar</h2><h2 class="botoes" id="apagar">Apagar</h2>
+            <h2 id="executar">Executar</h2>
+        </div>
+    </div>
+    <div class="exe">
+        <div class="modal2"></div>
+        <div class="habito-plan">
+            <h1>Hábito</h1>
+            <div class="container-days">
+                <div class="conteudo-days">
+                    <div class="days">S</div>
+                    <div class="days">T</div>
+                    <div class="days">Q</div>
+                    <div class="days"></div>
+                    <div class="days"></div>
+                    <div class="days"></div>
+                    <div class="days"></div>
+                </div>
+            </div>
+            <p style="margin: 0;">Você cumpriu o seu hábito hoje?</p>
+            <div class="radio-cont">
+                <div class="radio"></div>
+                <div class="radio"></div>
+                <div class="radio"></div>
+            </div>
+            <div class="opc-cont">
+                <P class="opc">Não</P>
+                <P class="opc">Sim</P>
+                <P class="opc">Além</P>
+            </div>
+            <div class="input-sent">
+                <input type="text" placeholder="Sentimento">
+            </div>
+        </div>
+    </div>
+    <div class="alert" id="salvo">
+        Salvo!
     </div>
     <script src="jquery.js"></script>
     <script src="plenusMobile.js"></script>

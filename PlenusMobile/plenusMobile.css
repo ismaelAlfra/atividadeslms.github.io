@@ -7,6 +7,11 @@
         font-family: "Comfortaa";
         src: url(".//midia/Comfortaa-Light.ttf") format("truetype");
     }
+    .inicial{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
     .menu-topo{
         width: 100%;
         height: 70px;
@@ -39,7 +44,16 @@
         position: absolute;
         background-color: white;
         margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
         /* margin: 10px; */
+    }
+    .menu-topo .foto img{
+        width: 40px;
+        height: auto;
+
     }
     .pesquisa{
         width: 100%;
@@ -92,7 +106,7 @@
         overflow: scroll;
         display: flex;
         align-items: center;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
     }
     .conteudo{
         height: 100%;
@@ -115,6 +129,8 @@
         margin: 15px;
         overflow: hidden;
         border-radius: 30px;
+        overflow: scroll;
+        
     }
     .titulo{
         width: 100%;
@@ -130,13 +146,16 @@
         font-size: 20px;
 
     }
-    #planejamento{
+    #planejamento .titulo{
         background-color: #FFAF7B;
     }
-    #andamento{
+    #andamento .titulo{
         background-color: #4AADFF;
     }
-    #conquistas{
+    #andamento .item-caixa, .plan, .first{
+        background-color: #4AADFF;
+    }
+    #conquistas .titulo{
         background-color: #46CAC3;
     } 
     .add{
@@ -249,6 +268,7 @@
         margin-right: 5%;
         float: right;
         overflow: hidden;
+        margin-top: 0;
         /* display: none; */
     }
     .adicionando .proximo img{
@@ -470,6 +490,292 @@
     #tempo{
         display: none;
     }
+    .item-caixa{
+        width: 90%;
+        height: 40px;
+        border-radius: 30px;
+        margin-left: 15px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    .item-caixa h2{
+        color: white;
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        text-align: left;
+        margin-left: 60px;
+        padding-top: 12px;
+    }
+    .item-caixa img{
+        float: left;
+        height: 25px;
+        margin-top: 6px;
+        margin-left: 20px;
+    }
+    .item-caixa .pontos{
+        float: right;
+        height: 20px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+    .plan{
+        background-color: #FFAF7B;
+    }
+    .first{
+        margin-top: 10px;
+        float: left;
+    }
+    .notas{
+        width: 0;
+        height: 0;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        z-index: 3;
+        opacity: 1;
+    }
+    .bloco{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 300px;
+        border: solid 1.2px #7B9BDD;
+        border-radius: 30px;
+        /* position: absolute; */
+        /* float: left; */
+        overflow: hidden;
+        margin-left: 25px;
+        
+    }
+    #campo-texto{
+        outline: none;
+        resize: none;
+        border: none;
+        overflow: hidden;
+        width: 85%;
+        height: 200px;
+    }
+    .notas .etapa{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .notas .cancelar, .proximo{
+        margin-top: 4px;
+    }
+    .modal{
+        height: 0;
+        width: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.37);
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s;
+    }
+    .modal2{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .habito-plan{
+        height: 40%;
+        width: 80%;
+        background-color: rgb(236, 236, 236);
+        border-radius: 30px;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+       
+    }
+    .habito-plan h1{
+        font-family: 'Comfortaa';
+        background-color: #FFAF7B;
+        color: white;
+        padding: 10px;
+    }
+    .habito-plan .botoes{
+        display: inline-block;
+        margin: 20px;
+        margin-top: 80px; 
+        padding: 12px;
+        border-radius: 30px;
+        background-color: #4AADFF;
+        font-family: 'Comfortaa';
+        color: white;
+        font-size: 15px;
+
+    }
+    .habito-plan #executar{
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: #4AADFF;
+        font-family: 'Comfortaa';
+        color: white;
+    }
+    #apagar{
+        background-color: #F39292;
+    }
+    #editar{
+        background-color: #4A79DA;
+    }
+    .exe-botao{
+        display: block;
+        background-color: #4AADFF;
+        float: left;
+        margin-left: 12.5%;
+        margin-top: 5px;
+        padding: 15px;
+        border-radius: 30px;
+        color: white;
+        font-family: 'Comfortaa';
+        font-size: 18px;
+    }
+    #recompensa .proximo{
+        background-color: #FFAF7B;
+    }
+    .exe{
+        height: 0;
+        width: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.37);
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s;
+        overflow: hidden;
+    }
+    .exe .days{
+        width: 40px;
+        height: 40px;
+        background-color: #4A79DA;
+        border-radius: 50%;
+        float: left;
+        /* margin: 10px; */
+        margin-left: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Comfortaa';
+        font-size: 18px;
+    }
+    .exe .habito-plan{
+        height: 70%;
+        width: 85%;
+    }
+    .container-days{
+        width: auto;
+        height: 55px;
+        overflow: scroll;
+        margin-top: 20px;
+    }
+    .conteudo-days{
+        width: 275%;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+    }
+    .checado{
+        border: solid 2px rgb(0, 207, 0);
+    }
+    .habito-plan p{
+        color: #4A79DA;
+        font-family: 'Comfortaa';
+        margin: 10px;
+    }
+    .radio{
+        width: 7px;
+        height: 7px;
+        border: solid 2px #4A79DA;
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 25px;
+        border-radius: 50%;
+    }
+    .opc{
+        display: inline-block;
+        margin: 0;
+        
+    }
+    .radio-cont{
+        height: auto;
+        width: auto;
+    }
+    .opc-cont{
+        height: auto;
+        width: auto;
+    }
+    .input-sent input{
+        border: solid 2px rgb(167, 167, 167);
+        border-radius: 30px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .info{
+        width: 18px;
+        height: auto;
+        float: left;
+        margin-left: 10px;
+    }
+    .explica{
+        width: 0;
+        height: 0;
+        background-color: #7B9BDD;
+        color: white;
+        border-radius: 0px 30px 30px 30px;
+        position: absolute;
+        /* padding: 20px; */
+        font-family: 'Comfortaa';
+        font-size: 0px;
+        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.507);
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.4s;
+
+    }
+    .info:hover ~ .explica{
+        width: 70%;
+        height: auto;
+        padding: 20px;
+        transform: all;
+        opacity: 1;
+        font-size: 13px;
+    }
+    .alert{
+        /* width: 200px;
+        height: 80px; */
+        width: 0;
+        height: 0;
+        background-color: #4A79DA;
+        box-shadow: 0px 3px 6px;
+        border-radius: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: 'Comfortaa';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 25px; */
+        font-size: 0;
+        transition: all 0.4s;
+    }
+        
 }
 @media(max-height: 450px){
     .caixas{
